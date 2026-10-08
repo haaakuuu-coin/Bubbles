@@ -1,0 +1,6 @@
+# Núcleo (todo gratuito, sin API keys)
+kokoro-onnx>=0.4        # motor TTS (MIT) -> descarga aparte los pesos Apache-2.0
+onnxruntime>=1.18       # CPU. Para GPU ver docs/INSTALL.md (onnxruntime-gpu / onnxruntime-directml)
+numpy>=1.24
+psutil>=5.9             # opcional: detección de RAM
+num2words>=0.5.13       # opcional: números/fechas en español (LGPL)

@@ -1,0 +1,12 @@
+[project]
+name = "tts-chatbot"
+version = "0.1.0"
+description = "Texto a voz local, gratuito y privado (Kokoro-82M), con arquitectura de adaptadores y chat opcional"
+requires-python = ">=3.10"
+dependencies = ["kokoro-onnx>=0.4", "onnxruntime>=1.18", "numpy>=1.24", "psutil>=5.9", "num2words>=0.5.13"]
+[project.scripts]
+tts-chatbot = "ttschat.__main__:main"
+[tool.setuptools.packages.find]
+include = ["ttschat*"]
+[tool.setuptools.package-data]
+ttschat = ["static/*"]
